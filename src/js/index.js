@@ -58,3 +58,25 @@ function esconderCartaoSelecionado() {
   const cartaoSelecionado = document.querySelector(".selecionado");
   cartaoSelecionado.classList.remove("selecionado");
 }
+
+const video = document.getElementById("video-fundo");
+const musica = document.getElementById("musica");
+const botaoAudio = document.getElementById("toggle-audio");
+
+botaoAudio.addEventListener("click", function () {
+
+    if (musica.paused) {
+
+        musica.currentTime = video.currentTime;
+        musica.play();
+
+        botaoAudio.textContent = "🔇 Desligar som";
+
+    } else {
+
+        musica.pause();
+
+        botaoAudio.textContent = "🔊 Ligar som";
+    }
+
+});
