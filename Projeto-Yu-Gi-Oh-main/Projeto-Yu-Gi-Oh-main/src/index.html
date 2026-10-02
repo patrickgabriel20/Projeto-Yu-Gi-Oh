@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Clone Yu-Gi-Oh! - Semana do zero ao programador contratado</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/estilos.css">
+    <link rel="stylesheet" href="src/css/fontes.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+</head>
+
+<body>
+    <div class="banner">
+    <video autoplay loop muted>
+        <source src="src/imagens/video fundo.mp4" type="video/mp4">
+      </video>
+      <div class="content">
+
+      </div>
+    
+    </div>
+
+<body>
+   <header class="cabecalho">
+        <h1 class="titulo">
+          <img src="src/imagens/logo pagina.png" alt="Logo Yu-Gi-Oh!" class="logo">
+        </h1>
+      </header> 
+    <main class="slider">
+        <button class="btn-seta btn-voltar" id="btn-voltar">
+            <img src="src/imagens/nivel-carta.png" alt="seta voltar">
+        </button>
+
+        <ul class="lista-personagens">
+            <li class="cartao fundo-1 selecionado">
+                <div class="carta-virada"></div>
+                <h2 class="nome">Mago Negro</h2>
+
+                <div class="nivel-carta">
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                </div>
+
+                <img 
+                src="src/imagens/Mago Negro.png" 
+                alt="Mago Negro" 
+                class="imagem-carta"
+                /> 
+                
+
+                <div class="informacoes">
+                    <p class="descricao">
+                        O mago definitivo em termos de ataque e defesa..
+                    </p>
+                    <div class="informacoes-ataque">
+                        <span>ATK/ 2500</span>
+                        <span>DEF/ 2100</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="cartao fundo-2">
+                <div class="carta-virada"></div>
+                <h2 class="nome">Dragão Branco de Olhos Azuis</h2>
+                <div class="nivel-carta">
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                </div>
+                <img 
+                src="src/imagens/Dragão Branco de Olhos Azuis.png" alt="Dragão Branco de Olhos Azuis"
+                    class="imagem-carta" 
+                    />
+
+                <div class="informacoes">
+                    <p class="descricao">
+                        Este dragão lendário é uma poderosa máquina de destruição. Praticamente invencível, muito poucos
+                        enfrentaram esta magnífica criatura e viveram para contar a história.
+                    </p>
+                    <div class="informacoes-ataque">
+                        <span>ATK/ 3000</span>
+                        <span>DEF/ 2500</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="cartao fundo-3">
+                <div class="carta-virada"></div>
+                <h2 class="nome">Dark Magician Girl</h2>
+                <div class="nivel-carta">
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                </div>
+                <img 
+                src="src/imagens/Pequena Maga Negra.png" 
+                alt="Pequena Maga Negra" 
+                class="imagem-carta" 
+                />
+
+                <div class="informacoes">
+                    <p class="descricao">
+                        Este card ganha 300 de ATK para cada "Mago Negro" ou "Mago do Caos Negro" no Cemitério de qualquer jogador
+                    </p>
+                    <div class="informacoes-ataque">
+                        <span>ATK/ 2000</span>
+                        <span>DEF/ 1700</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="cartao fundo-4">
+                <div class="carta-virada"></div>
+                <h2 class="nome">Mago do Tempo</h2>
+                <div class="nivel-carta">
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                </div>
+                <img 
+                src="src/imagens/Mago do Tempo.png" 
+                alt="Mago do Tempo" 
+                class="imagem-carta" 
+                />
+
+                <div class="informacoes">
+                    <p class="descricao">
+                        Uma vez por turno: você pode lançar uma moeda e escolher cara ou coroa. Se você ganhar, destrua
+                        todos os monstros que seu oponente controla. Se você perder, destrua tantos monstros que você
+                        controla quanto possível e, se isso acontecer, sofra dano igual à metade do ATK total que esses
+                        monstros destruídos tinham enquanto estavam com a face para cima no campo.
+                    </p>
+                    <div class="informacoes-ataque">
+                        <span>ATK/ 500</span>
+                        <span>DEF/ 400</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="cartao fundo-5">
+                <div class="carta-virada"></div>
+                <h2 class="nome">Kuriboh</h2>
+                <div class="nivel-carta">
+                    <span class="estrela"></span>
+                </div>
+                <img 
+                src="src/imagens/kuriboh.png" 
+                alt="Kuriboh" 
+                class="imagem-carta" 
+                />
+                <div class="informacoes">
+                    <p class="descricao">
+                        Durante o cálculo de dano, se um monstro do seu oponente atacar (Efeito Rápido): você pode
+                        descartar este card; você não sofre dano de batalha dessa batalha.
+                    </p>
+                    <div class="informacoes-ataque">
+                        <span>ATK/ 300</span>
+                        <span>DEF/ 200</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="cartao fundo-6">
+                <div class="carta-virada"></div>
+                <h2 class="nome">Caveira Invocada</h2>
+                <div class="nivel-carta">
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                </div>
+                <img 
+                src="src/imagens/Caveira Invocada.png" 
+                alt="Caveira Invocada" 
+                class="imagem-carta" 
+                />
+                <div class="informacoes">
+                    <p class="descricao">
+                        Um demônio com poderes das trevas para confundir o inimigo. Entre os monstros do tipo demônio, é
+                        dos mais fortes.(Este card é tratado como um card "Arquidemônio".)
+                    </p>
+                    <div class="informacoes-ataque">
+                        <span>ATK/ 2500</span>
+                        <span>DEF/ 1200</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="cartao fundo-7">
+                <div class="carta-virada"></div>
+                <h2 class="nome">Exodia, O Proibido</h2>
+                <div class="nivel-carta">
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                </div>
+                <img
+                src="src/imagens/Exodia, O Proibido.png" 
+                alt="Exodia, O Proibido" 
+                class="imagem-carta" 
+                />
+
+                <div class="informacoes">
+                    <p class="descricao">
+                        Se você tiver "Perna Direita de "O Proibido"", "Perna Esquerda de "O Proibido"", "Braço Direito
+                        de "O Proibido"" e "Braço Esquerdo de "O Proibido"", além de este card na sua mão, você vence o
+                        Duelo.
+                    </p>
+                    <div class="informacoes-ataque">
+                        <span>ATK/ 1000</span>
+                        <span>DEF/ 1000</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="cartao fundo-2">
+                <div class="carta-virada"></div>
+                <h2 class="nome">Obelisco, o Atormentador</h2>
+                <div class="nivel-carta">
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                </div>
+                <img 
+                src="src/imagens/obelisco o atormentador.jpg" alt="obelisco o atormentador"
+                    class="imagem-carta" 
+                    />
+
+                <div class="informacoes">
+                    <p class="descricao">
+                        Requer 3 Tributos para ser Invocado por Invocação-Normal (não pode ser Baixado Normalmente). A Invocação-Normal deste card não pode ser negada. Quando Invocado por Invocação-Normal, cards e efeitos não podem ser ativados. Nenhum duelista pode escolher este card como alvo de efeitos de card. Uma vez por turno, durante a Fase Final, se este card foi Invocado por Invocação-Especial: envie-o para o Cemitério. Você pode oferecer 2 monstros como Tributo; destrua todos os monstros que seu oponente controla. Este card não pode declarar um ataque no turno em que este efeito for ativado.
+                    </p>
+                    <div class="informacoes-ataque">
+                        <span>ATK/ 4000</span>
+                        <span>DEF/ 4000</span>
+                    </div>
+                </div>
+            </li>
+
+        <li class="cartao fundo-2">
+            <div class="carta-virada"></div>
+            <h2 class="nome">Dragão Arco-Íris
+        </h2>
+            <div class="nivel-carta">
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+            </div>
+            <img 
+            src="src/imagens/Slifer, o Dragão Celeste.jpg" alt="Slifer, o Dragão Celeste"
+                class="imagem-carta" 
+                />
+
+            <div class="informacoes">
+                <p class="descricao">
+                    Requer 3 Tributos para ser Invocado por Invocação-Normal (não pode ser Baixado Normalmente). A Invocação-Normal deste card não pode ser negada. Quando Invocado por Invocação-Normal, cards e efeitos não podem ser ativados. Uma vez por turno, durante a Fase Final, se este card foi Invocado por Invocação-Especial: envie-o para o Cemitério. Ganha 1000 de ATK/DEF para cada card na sua mão. Se um ou mais monstros forem Invocados por Invocação-Normal ou Especial no campo do seu oponente em Posição de Ataque: esses monstros perdem 2000 de ATK e, depois, se algum deles tiver o ATK reduzido a 0 como resultado, destrua-o
+                </p>
+                <div class="informacoes-ataque">
+                    <span>ATK/ ?</span>
+                    <span>DEF/ ?</span>
+                </div>
+            </div>
+        </li>
+
+        <li class="cartao fundo-2">
+            <div class="carta-virada"></div>
+            <h2 class="nome">Homem-Alado da Chama Brilhante, o HERÓI do Elemento</h2>
+            <div class="nivel-carta">
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+            </div>
+            <img 
+            src="src/imagens/Homem-Alado da Chama Brilhante, o HERÓI do Elemento.png" alt="Homem-Alado da Chama Brilhante, o HERÓI do Elemento"
+                class="imagem-carta" 
+                />
+
+            <div class="informacoes">
+                <p class="descricao">
+                    (Este card deve ser sempre considerado como um card "Cristalino(a) Definitivo(a)".)
+                    Não pode ser Invocado por Invocação-Normal/Baixado. Deve ser Invocado por Invocação-Especial (da sua mão) ao ter 7 cards "Fera Cristalina" com nomes diferentes no seu campo e/ou Cemitério. Este card não pode ativar os seguintes efeitos no turno em que for Invocado por Invocação-Especial. (Efeito Rápido): você pode enviar para o Cemitério todos os monstros "Fera Cristalina" que você controla; este card ganha 1000 de ATK para cada monstro enviado para o Cemitério. Você pode banir todos os monstros "Fera Cristalina" do seu Cemitério; embaralhe no Deck todos os cards no campo.
+                </p>
+                <div class="informacoes-ataque">
+                    <span>ATK/ 2500</span>
+                    <span>DEF/ 2100</span>
+                </div>
+            </div>
+          </li>
+
+          <li class="cartao fundo-2">
+            <div class="carta-virada"></div>
+            <h2 class="nome">Herói Elementar, Neos do Ar</h2>
+            <div class="nivel-carta">
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+                <span class="estrela"></span>
+            </div>
+            <img 
+            src="src/imagens/E.HERO-Air-Neos.HERO-Ear-Neos.jpg" alt="Herói Elementar, Neos do Ar"
+                class="imagem-carta" 
+                />
+
+            <div class="informacoes">
+                <p class="descricao">
+                    "Elemental Hero Neos" + "Neo-Spacian Air Hummingbird" Esta carta somente pode ser Special Summoned do seu Extra Deck por retornar as cartas citadas do seu lado do campo ao Deck ao Deck (Você não utiliza "Polymerization"). Enquanto seus LPs estiverem menores que os LPs do seu oponente, esta carta ganha ATK igual àquela diferença. Esta carta retorna ao Extra Deck durante a Fase Final.
+                </p>
+                <div class="informacoes-ataque">
+                    <span>ATK/ 2500</span>
+                    <span>DEF/ 2000</span>
+                </div>
+            </div>
+          </li>
+      </ul>
+
+      <button class="btn-seta btn-avancar" id="btn-avancar">
+        <img src="src/imagens/nivel-carta.png" alt="seta avançar" />
+      </button>
+    </main>
+    <script src="src/js/index.js"></script>
+  </body>
+</html>
